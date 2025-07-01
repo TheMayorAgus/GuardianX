@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="GuardianX - Seguridad predictiva potenciada por IA">
+    <title>GuardianX</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        AOS.init();
+        const toggle = document.getElementById("theme-toggle");
+        toggle.addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+        });
+      });
+    </script>
+  </head>
+  <body class="font-sans leading-relaxed tracking-wide">
+    <header class="bg-white dark:bg-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+        <h1 class="text-2xl font-bold">GuardianX</h1>
+        <button id="theme-toggle" class="bg-gray-200 dark:bg-gray-700 px-3 py-1 rounded text-sm">
+          🌙 / ☀️
+        </button>
+      </div>
+    </header>
+
+    <main class="px-4 py-10 max-w-5xl mx-auto">
+      <section class="text-center mb-16" data-aos="fade-up">
+        <h2 class="text-4xl font-bold mb-4">Seguridad predictiva. Control total.</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300">GuardianX detecta amenazas internas antes de que ocurran. Potenciado por inteligencia artificial.</p>
+      </section>
+
+      <section class="grid sm:grid-cols-2 gap-10 mb-20" data-aos="fade-up" data-aos-delay="100">
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Machine Learning aplicado</h3>
+          <p>Detección de anomalías de comportamiento y scoring de riesgo dinámico por usuario, evento y contexto.</p>
+        </div>
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Auditoría inmutable</h3>
+          <p>Logs WORM y firmas de integridad para asegurar evidencia sólida y trazabilidad legal.</p>
+        </div>
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Privacidad Zero Trust</h3>
+          <p>Control jerárquico del acceso. Observación limitada por rol. Prevención de abuso interno.</p>
+        </div>
+        <div class="p-6 bg-gray-100 dark:bg-gray-800 rounded shadow">
+          <h3 class="text-xl font-semibold mb-2">Dashboard visual</h3>
+          <p>Filtros, gráficas, métricas y exportaciones para tomar decisiones con evidencia en tiempo real.</p>
+        </div>
+      </section>
+
+      <section data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold mb-4 text-center">Contacto</h3>
+        <form name="contact" method="POST" data-netlify="true" class="max-w-xl mx-auto space-y-4 bg-gray-100 dark:bg-gray-800 p-6 rounded shadow">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" name="name" placeholder="Nombre" required class="w-full p-2 rounded bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700" />
+          <input type="email" name="email" placeholder="Correo electrónico" required class="w-full p-2 rounded bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700" />
+          <textarea name="message" placeholder="Mensaje" required class="w-full p-2 rounded bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700"></textarea>
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="text-center text-sm text-gray-500 dark:text-gray-400 py-8">
+      &copy; 2025 GuardianX. Todos los derechos reservados.
+    </footer>
+
+    <!-- Plausible integration (placeholder) -->
+    <!-- <script async defer data-domain="tusitio.com" src="https://plausible.io/js/plausible.js"></script> -->
+  </body>
+</html>
