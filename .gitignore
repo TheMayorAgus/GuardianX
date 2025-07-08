@@ -1,0 +1,8 @@
+/contact-backend/
+**/.venv/
+**/__pycache__/
+/node_modules/
+**.zip
+
+README.md
+`
