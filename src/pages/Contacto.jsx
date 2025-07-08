@@ -244,7 +244,7 @@ const Contacto = () => {
                 siguiéndonos en nuestras redes sociales.
               </p>
               <div className="social-links">
-                <a href="https://www.linkedin.com/in/alejandroseiler/" className="social-link">LinkedIn</a>
+                <a href="#" className="social-link">LinkedIn</a>
                 <a href="#" className="social-link">Twitter</a>
                 <a href="#" className="social-link">GitHub</a>
               </div>
